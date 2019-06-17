@@ -59,7 +59,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
   var packageVersionEndpoint: String {
     switch self.target {
     case .Production:
-      return "https://api.walkinsights.com/api/v1/plugins/ios"
+      return "https://api-kddi.walkinsights.com/api/v1/plugins/ios"
     case .Development:
       return "http://dev-square.zoyi.co/api/v1/plugins/ios"
     }
@@ -68,7 +68,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
   var uuidEndpoint: String {
     switch self.target {
     case .Production:
-      return "https://api.walkinsights.com/api/v1/square_ibeacons"
+      return "https://api-kddi.walkinsights.com/api/v1/square_ibeacons"
     case .Development:
       return "http://dev-square.zoyi.co/api/v1/square_ibeacons"
     }
@@ -77,7 +77,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
   var dataEndpoint: String {
     switch self.target {
     case .Production:
-      return "https://dropwizard.walkinsights.com/api/v1/ibeacon_signals"
+      return "https://dropwizard-kddi.walkinsights.com/api/v1/ibeacon_signals"
     case .Development:
       return "http://dropwizard-dev.walkinsights.com/api/v1/ibeacon_signals"
     }

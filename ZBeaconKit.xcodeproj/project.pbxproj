@@ -239,6 +239,7 @@
 					};
 					9C073A1F1C27A7EB001465B2 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8278Q64QFC;
 					};
 				};
 			};
@@ -247,6 +248,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 9C073A0C1C27A7EB001465B2;
@@ -472,20 +474,24 @@
 		9C073A2E1C27A7EB001465B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8278Q64QFC;
 				INFOPLIST_FILE = ZBeaconKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.zoyi.ZBeaconKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		9C073A2F1C27A7EB001465B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8278Q64QFC;
 				INFOPLIST_FILE = ZBeaconKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.zoyi.ZBeaconKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

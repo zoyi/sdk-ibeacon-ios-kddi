@@ -640,8 +640,8 @@ public class DelegateManager: NSObject, URLSessionDataDelegate, URLSessionDownlo
  Handles providing singletons of NSURLSession.
  */
 open class SharedSession {
-  open static let defaultSession = URLSession(configuration: URLSessionConfiguration.default,
+  public static let defaultSession = URLSession(configuration: URLSessionConfiguration.default,
                                          delegate: DelegateManager.sharedInstance, delegateQueue: nil)
-  open static let ephemeralSession = URLSession(configuration: URLSessionConfiguration.ephemeral,
+  public static let ephemeralSession = URLSession(configuration: URLSessionConfiguration.ephemeral,
                                            delegate: DelegateManager.sharedInstance, delegateQueue: nil)
 }

@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-  s.name         = "ZBeaconKit"
-  s.version      = "1.2.1"
+  s.name         = "ZBeaconKitKDDI"
+  s.version      = "1.2.2"
   s.summary      = "ZBeaconKit written by ZOYI"
 
   # This description is used to generate tags and improve search results.
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "ZBeaconKit O2O SDK by ZOYI"
-  s.homepage     = "https://github.com/zoyi/sdk-ibeacon-ios"
+  s.homepage     = "https://github.com/zoyi/sdk-ibeacon-ios-kddi"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-  s.source       = { :git => "https://github.com/zoyi/sdk-ibeacon-ios.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/zoyi/sdk-ibeacon-ios-kddi.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

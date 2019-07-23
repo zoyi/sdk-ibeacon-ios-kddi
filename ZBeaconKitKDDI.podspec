@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
   s.name         = "ZBeaconKitKDDI"
-  s.version      = "1.2.2"
+  s.version      = "1.2.3"
   s.summary      = "ZBeaconKit written by ZOYI"
 
   # This description is used to generate tags and improve search results.
@@ -82,5 +82,5 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
   s.requires_arc = true
-
+  s.swift_version = '5.0'
 end

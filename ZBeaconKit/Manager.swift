@@ -117,7 +117,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
     self.stop()
 
     if Manager.customerId == nil {
-      dlog("[ERR] you should set customer id")
+      dlog("[LOG] customer id has not set")
     }
 
     self.retryCount = 0
@@ -280,13 +280,10 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
     uuid: String,
     major: Int,
     minor: Int) {
-    guard let customerId = Manager.customerId else {
-      dlog("[ERR] Did not send event because no customer id")
-      return
-    }
+
     var params: [String: Any] = [
       "package_id": Manager.packageId ?? "",
-      "customer_id" : customerId,
+
       "event": type.rawValue,
 
       "ibeacon_uuid": uuid,
@@ -303,6 +300,9 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
     
     if let advId = Manager.advId, advId != "" {
       params["ad_id"] = advId
+    }
+    if let customerId = Manager.customerId {
+      params["customer_id"] = customerId
     }
 
     do {

@@ -6,5 +6,5 @@ target 'ZBeaconKitExample' do
   use_frameworks!
 
   # Pods for ZBeaconKitExample
-  pod 'ZBeaconKit', :path => '../..'
+  pod 'ZBeaconKitKDDI', :path => '../..'
 end

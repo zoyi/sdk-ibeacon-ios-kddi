@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ZBeaconKit
+import ZBeaconKitKDDI
 import UserNotifications
 
 @UIApplicationMain

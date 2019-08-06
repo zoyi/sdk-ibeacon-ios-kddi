@@ -1,16 +1,16 @@
 PODS:
-  - ZBeaconKit (1.1.1)
+  - ZBeaconKitKDDI (1.2.3)
 
 DEPENDENCIES:
-  - ZBeaconKit (from `../..`)
+  - ZBeaconKitKDDI (from `../..`)
 
 EXTERNAL SOURCES:
-  ZBeaconKit:
-    :path: ../..
+  ZBeaconKitKDDI:
+    :path: "../.."
 
 SPEC CHECKSUMS:
-  ZBeaconKit: 28f669560041cafae2e558bbffad5011c5e1ff4c
+  ZBeaconKitKDDI: 918abe7b79c84b29e9fc7cc8e6105472199336a7
 
-PODFILE CHECKSUM: 5d66248abd112a0505390492b4e82fb1241473b0
+PODFILE CHECKSUM: 9d046edd0bc0fc13fee7f0ab6a057e8929d2b95c
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.7.1

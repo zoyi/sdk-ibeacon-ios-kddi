@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 protocol MonitoringServiceDelegate: class {
   func didEnterRegion(_ region: CLBeaconRegion)

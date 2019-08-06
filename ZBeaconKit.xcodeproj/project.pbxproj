@@ -12,7 +12,7 @@
 		14DF7D221F443A7F006E4F34 /* MonitoringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DF7D211F443A7F006E4F34 /* MonitoringManager.swift */; };
 		14DF7D251F444F18006E4F34 /* PrefStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DF7D241F444F18006E4F34 /* PrefStore.swift */; };
 		9C073A1A1C27A7EB001465B2 /* ZBeaconKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C073A191C27A7EB001465B2 /* ZBeaconKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C073A211C27A7EB001465B2 /* ZBeaconKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C073A161C27A7EB001465B2 /* ZBeaconKit.framework */; };
+		9C073A211C27A7EB001465B2 /* ZBeaconKitKDDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C073A161C27A7EB001465B2 /* ZBeaconKitKDDI.framework */; };
 		9C073A261C27A7EB001465B2 /* ZBeaconKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C073A251C27A7EB001465B2 /* ZBeaconKitTests.swift */; };
 		9C073A3A1C27A812001465B2 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C073A391C27A812001465B2 /* Manager.swift */; };
 		9C073A3F1C27A896001465B2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C073A3E1C27A896001465B2 /* CoreLocation.framework */; };
@@ -45,7 +45,7 @@
 		14DF7D1F1F443792006E4F34 /* RangingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangingService.swift; sourceTree = "<group>"; };
 		14DF7D211F443A7F006E4F34 /* MonitoringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitoringManager.swift; sourceTree = "<group>"; };
 		14DF7D241F444F18006E4F34 /* PrefStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefStore.swift; sourceTree = "<group>"; };
-		9C073A161C27A7EB001465B2 /* ZBeaconKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZBeaconKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C073A161C27A7EB001465B2 /* ZBeaconKitKDDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZBeaconKitKDDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C073A191C27A7EB001465B2 /* ZBeaconKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBeaconKit.h; sourceTree = "<group>"; };
 		9C073A1B1C27A7EB001465B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C073A201C27A7EB001465B2 /* ZBeaconKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZBeaconKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C073A211C27A7EB001465B2 /* ZBeaconKit.framework in Frameworks */,
+				9C073A211C27A7EB001465B2 /* ZBeaconKitKDDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +108,7 @@
 		9C073A171C27A7EB001465B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C073A161C27A7EB001465B2 /* ZBeaconKit.framework */,
+				9C073A161C27A7EB001465B2 /* ZBeaconKitKDDI.framework */,
 				9C073A201C27A7EB001465B2 /* ZBeaconKitTests.xctest */,
 			);
 			name = Products;
@@ -187,9 +187,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9C073A151C27A7EB001465B2 /* ZBeaconKit */ = {
+		9C073A151C27A7EB001465B2 /* ZBeaconKitKDDI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C073A2A1C27A7EB001465B2 /* Build configuration list for PBXNativeTarget "ZBeaconKit" */;
+			buildConfigurationList = 9C073A2A1C27A7EB001465B2 /* Build configuration list for PBXNativeTarget "ZBeaconKitKDDI" */;
 			buildPhases = (
 				9C073A111C27A7EB001465B2 /* Sources */,
 				9C073A121C27A7EB001465B2 /* Frameworks */,
@@ -200,9 +200,9 @@
 			);
 			dependencies = (
 			);
-			name = ZBeaconKit;
+			name = ZBeaconKitKDDI;
 			productName = ZBeaconKit;
-			productReference = 9C073A161C27A7EB001465B2 /* ZBeaconKit.framework */;
+			productReference = 9C073A161C27A7EB001465B2 /* ZBeaconKitKDDI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9C073A1F1C27A7EB001465B2 /* ZBeaconKitTests */ = {
@@ -256,7 +256,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C073A151C27A7EB001465B2 /* ZBeaconKit */,
+				9C073A151C27A7EB001465B2 /* ZBeaconKitKDDI */,
 				9C073A1F1C27A7EB001465B2 /* ZBeaconKitTests */,
 			);
 		};
@@ -317,7 +317,7 @@
 /* Begin PBXTargetDependency section */
 		9C073A231C27A7EB001465B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C073A151C27A7EB001465B2 /* ZBeaconKit */;
+			target = 9C073A151C27A7EB001465B2 /* ZBeaconKitKDDI */;
 			targetProxy = 9C073A221C27A7EB001465B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,7 +452,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -473,7 +473,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -513,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C073A2A1C27A7EB001465B2 /* Build configuration list for PBXNativeTarget "ZBeaconKit" */ = {
+		9C073A2A1C27A7EB001465B2 /* Build configuration list for PBXNativeTarget "ZBeaconKitKDDI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C073A2B1C27A7EB001465B2 /* Debug */,

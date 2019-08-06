@@ -47,12 +47,10 @@ $(SRCROOT)/ZBeaconKit.framework
 
 #### If you are building with Swift
 
-- Import `ZBeaconKit` or `ZBeaconKitKDDI`, configure your App authentication information.
+- Import `ZBeaconKitKDDI`, configure your App authentication information.
 
 ```swift
-import ZBeaconKit // use carthage
-import ZBeaconKitKDDI // use cocoapods
-// if you use cocoapod use 'ZBeaconKitKDDI'
+import ZBeaconKitKDDI
 ...
 
 override func viewDidLoad() {
@@ -87,7 +85,7 @@ func generateSampleCustomerId() -> String {
 
 ![](https://s3.ap-northeast-2.amazonaws.com/zoyi-github-assets/wiki/ZBeacon/enable-embedded-content-contains-swift-code.png)
 
-- Import `<ZBeaconKit/ZBeaconKit.h>`, configure your App authentication information.
+- Import `<ZBeaconKitKDDI/ZBeaconKit.h>`, configure your App authentication information.
 
 ```objective-c
 

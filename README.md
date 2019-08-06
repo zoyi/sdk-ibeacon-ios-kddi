@@ -1,11 +1,11 @@
-# ZBeaconKit
+# ZBeaconKit for KDDI
 
 ## Prerequisites
 
 - `Location Always Usage` permission should be enabled(*For iBeacon Region monitoring*).
 - Device Bluetooth Service should always be active(*iBeacon is one of BLE Beacon specs, it needs Bluetooth to work properly*).
 
-## Integrating ZBeaconKit to your iOS App.
+## Integrating ZBeaconKit for KDDI to your iOS App.
 
 ### Adding `Location Always Usage` permission.
 
@@ -13,14 +13,18 @@ Add `NSLocationAlwaysUsageDescription` key into your project `info.plist`.
 
 ![](http://s3.ap-northeast-2.amazonaws.com/zoyi-github-assets/wiki/ZBeacon/add-location-always-usage-permission.png)
 
-### [Download](http://wifi-zoyi-jp.s3.amazonaws.com/wudi/ZBeaconKit.framework.zip) `ZBeaconKit.framework`, and copy to your project root folder.
-
-![](http://s3.ap-northeast-2.amazonaws.com/zoyi-github-assets/wiki/ZBeacon/download-zbeaconkit-framework.png)
-![](https://s3.ap-northeast-2.amazonaws.com/zoyi-github-assets/wiki/ZBeacon/locate-file-in-project-root.png)
-
-### Drag the `ZBeaconKit.framework` to your Xcode project path.
-
-![](https://s3.ap-northeast-2.amazonaws.com/zoyi-github-assets/wiki/ZBeacon/drag-and-drop-to-xcode-project-path.png)
+### [install](https://cocoapods.org/) `Cocoapods`
+- Add below into your Podfile
+```pod
+target YOUR_PROJECT_TARGET do
+  pod 'ZBeaconKitKDDI'
+end
+```
+- run following code
+```
+pod repo update
+pod install
+```
 
 ### [Install](https://github.com/Carthage/Carthage/releases) `carthage`.
 
@@ -42,16 +46,18 @@ $(SRCROOT)/ZBeaconKit.framework
 ### The last step, configure your App specific info.
 
 #### If you are building with Swift
-- Import `ZBeaconKit`, configure your App authentication information.
+
+- Import `ZBeaconKit` or `ZBeaconKitKDDI`, configure your App authentication information.
 
 ```swift
-import ZBeaconKit
-
+import ZBeaconKit // use carthage
+import ZBeaconKitKDDI // use cocoapods
+// if you use cocoapod use 'ZBeaconKitKDDI'
 ...
 
 override func viewDidLoad() {
   super.viewDidLoad()
-  
+
   let manager = Manager(
     email: "app@zoyi.co",
     authToken: "YOUR_AUTH_TOKEN",
@@ -59,10 +65,10 @@ override func viewDidLoad() {
   )
   Manager.debugMode = true // For debugging
   Manager.customerId = self.generateSampleCustomerId()
-  
+
   // You must start manager manually.
   manager.start()
-  
+
   // And if you want to stop,
   manager.stop()
 }
@@ -87,7 +93,7 @@ func generateSampleCustomerId() -> String {
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
+
   self.manager = [[Manager alloc]
                   initWithEmail:@"xxxx@zoyi.co"
                   authToken:@"A1B2C3D4E5F6"
@@ -100,7 +106,7 @@ func generateSampleCustomerId() -> String {
   NSString *customerId = [self hmac: deviceIdWithSalt withKey: @"YOUR_KEY_FOR_HMAC"];
 
   [Manager setCustomerId: customerId];
-  
+
   // You must start manager manually.
   [self.manager start];
 
@@ -132,7 +138,7 @@ func generateSampleCustomerId() -> String {
 **Note** that you must describe _deployment target_ to manager when initializing.
 The deployment target depends on ZOYI's actual O2O server endpoint.
 
-This flag is only used for mutual test with ZOYI Corp. 
+This flag is only used for mutual test with ZOYI Corp.
 So most of 3rd parties does not need to change this.
 
 Case of Swift:

@@ -105,7 +105,6 @@
 				22C79AEC203D270300A1ED84 /* Frameworks */,
 				22C79AED203D270300A1ED84 /* Resources */,
 				D2A615BA4D4F0B84F563C1C6 /* [CP] Embed Pods Frameworks */,
-				1461FCACCA174A8EBE1656F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,37 +169,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1461FCACCA174A8EBE1656F7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZBeaconKitExample/Pods-ZBeaconKitExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D2A615BA4D4F0B84F563C1C6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZBeaconKitExample/Pods-ZBeaconKitExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZBeaconKit/ZBeaconKit.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ZBeaconKitExample/Pods-ZBeaconKitExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZBeaconKitKDDI/ZBeaconKitKDDI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZBeaconKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZBeaconKitKDDI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZBeaconKitExample/Pods-ZBeaconKitExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZBeaconKitExample/Pods-ZBeaconKitExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F4A442C870CAF2325078F244 /* [CP] Check Pods Manifest.lock */ = {

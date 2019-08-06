@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreLocation
-import ZBeaconKit
+import ZBeaconKitKDDI
 import UserNotifications
 import MessageUI
 

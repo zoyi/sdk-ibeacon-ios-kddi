@@ -110,7 +110,7 @@ SwiftHTTP: Copyright (c) 2015 Vluxe. All rights reserved. (https://github.com/da
 			<key>License</key>
 			<string>SDK</string>
 			<key>Title</key>
-			<string>ZBeaconKit</string>
+			<string>ZBeaconKitKDDI</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

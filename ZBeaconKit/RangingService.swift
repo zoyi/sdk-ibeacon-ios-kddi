@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 protocol RangingServiceDelegate: class {
   func didRangeBeacon(_ beacon: CLBeacon, forRegion region: CLBeaconRegion)

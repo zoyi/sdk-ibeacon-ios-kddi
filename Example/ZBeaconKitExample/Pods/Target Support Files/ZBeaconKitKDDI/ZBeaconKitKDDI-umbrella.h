@@ -12,6 +12,6 @@
 
 #import "ZBeaconKit.h"
 
-FOUNDATION_EXPORT double ZBeaconKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char ZBeaconKitVersionString[];
+FOUNDATION_EXPORT double ZBeaconKitKDDIVersionNumber;
+FOUNDATION_EXPORT const unsigned char ZBeaconKitKDDIVersionString[];
 

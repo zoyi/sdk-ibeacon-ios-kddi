@@ -61,7 +61,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
     case .Production:
       return "https://api-kddi.walkinsights.com/api/v1/plugins/ios"
     case .Development:
-      return "http://dev-square.zoyi.co/api/v1/plugins/ios"
+      return "https://rails-staging.walkinsights.com/api/v1/plugins/ios"
     }
   }
 
@@ -70,7 +70,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
     case .Production:
       return "https://api-kddi.walkinsights.com/api/v1/square_ibeacons"
     case .Development:
-      return "http://dev-square.zoyi.co/api/v1/square_ibeacons"
+      return "https://rails-staging.walkinsights.com/api/v1/square_ibeacons"
     }
   }
 
@@ -79,7 +79,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
     case .Production:
       return "https://dropwizard-kddi.walkinsights.com/api/v1/ibeacon_signals"
     case .Development:
-      return "http://dropwizard-dev.walkinsights.com/api/v1/ibeacon_signals"
+      return "https://dropwizard-staging.walkinsights.com/api/v1/ibeacon_signals"
     }
   }
 
@@ -111,7 +111,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
   }
 
   // MARK: - Public methods
-  
+
   @objc
   public func start() {
     self.stop()
@@ -297,7 +297,7 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
 
       "sdk_version": Manager.currentPackageVersion
     ]
-    
+
     if let advId = Manager.advId, advId != "" {
       params["ad_id"] = advId
     }

@@ -38,7 +38,7 @@ pod install
 ```
 and add the paths to the frameworks you want to use under “Input Files”, e.g.:
 ```
-$(SRCROOT)/ZBeaconKit.framework
+$(SRCROOT)/ZBeaconKitKDDI.framework
 ```
 
 ![](http://s3.ap-northeast-2.amazonaws.com/zoyi-github-assets/wiki/ZBeacon/add-copy-file-run-script.png)

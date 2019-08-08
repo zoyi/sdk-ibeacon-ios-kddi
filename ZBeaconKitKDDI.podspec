@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
   s.name         = "ZBeaconKitKDDI"
-  s.version      = "1.2.4"
+  s.version      = "1.2.5"
   s.summary      = "ZBeaconKit written by ZOYI"
 
   # This description is used to generate tags and improve search results.

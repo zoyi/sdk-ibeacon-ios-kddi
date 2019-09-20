@@ -281,11 +281,16 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
     major: Int,
     minor: Int) {
 
+    guard let advId = Manager.advId, advId != "" else {
+      dlog("[ERR] Could not send signal due to missing advertise id")
+      return
+    }
+    
     var params: [String: Any] = [
       "package_id": Manager.packageId ?? "",
 
       "event": type.rawValue,
-
+      "ad_id": advId,
       "ibeacon_uuid": uuid,
       "major": major,
       "minor": minor,
@@ -298,9 +303,6 @@ public final class Manager: NSObject, MonitoringManagerDelegate {
       "sdk_version": Manager.currentPackageVersion
     ]
 
-    if let advId = Manager.advId, advId != "" {
-      params["ad_id"] = advId
-    }
     if let customerId = Manager.customerId {
       params["customer_id"] = customerId
     }
